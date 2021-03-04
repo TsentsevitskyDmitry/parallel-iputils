@@ -34,7 +34,6 @@ int main(int argc, char** argv)
     {
         auto routine = [&host, &size, &ttl, &mutex, &results](){
             PingResult res;
-            res.ttl = 8;
             res.to_host = host;
 
             PPinger::ping(host, size, ttl, res);
